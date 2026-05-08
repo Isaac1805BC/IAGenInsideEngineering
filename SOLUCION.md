@@ -1,3 +1,4 @@
+Ejercicio 1
 IA:Claude
 
 PROMT:En el readme hay un ejercicio el cual se llama Problema#1: El videoclub
@@ -8,6 +9,16 @@ desarrollar el ejercicio, explica los principios solid que se ultilizan,
 Aplica polimorfismo y encapsulamiento y coloca una evidencia de la
 ejecucion del ejercicio(solo la ejecucion en consola)
 
+
+Ejercicio 2
+IA:Claude
+
+PROMT:Analiza el readme del proyecto y tengo que realizar el problema#2 Llamado
+  Tienda Virtual usa la pista de los patrones y en el SOLUCION.md agrega el
+  apartado de ejercicio 2 y Pon La identificacion de los patrones, lo que hiciste
+  para completar la implementacion, revisa el diagrama existente y en el
+  SOLUCION.md pon si es necesario hacerle cambios, escribe los errores que
+  identificaste, Corrige el codigo y por ultimo realiza y ejecuta unas pruebas
 ---
 
 # SOLUCION - IAGen Inside Engineering
@@ -275,7 +286,7 @@ El diagrama de contexto es **claro y suficiente** para entender el flujo de nego
 1. **Creada** `PaymentFactory.java` — interfaz con `createPaymentMethod(double, String, String)`.
 2. **Creadas** `CreditCardPaymentFactory.java`, `PaypalPaymentFactory.java`, `CryptoPaymentFactory.java` — concretan el patrón Abstract Factory; cada una almacena los datos específicos del método de pago y delega la creación al constructor del producto correspondiente.
 3. **Corregido** `PaymentMethod.java` — parámetro renombrado de `transactionID` a `customerId`; `this.customerID = customerId` ahora asigna correctamente.
-4. **Corregido** `PaymentEventObserver.java` — eliminado `import javax.management.Notification`; ahora usa la clase del paquete propio (sin import adicional necesario).
+4. **Corregido** `PaymentEventObserver.java` — eliminado `import javax.management.Notification`; ahora usa la clase del paquete propio.
 5. **Corregido** `CryptoFactory.java` — eliminada la línea `this.token = token` que asignaba `null` a sí mismo.
 6. **Corregido** `CreditCardFactory.java` — añadida `this.address = address` en el constructor.
 
