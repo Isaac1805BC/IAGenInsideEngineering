@@ -15,6 +15,7 @@ public class CreditCardFactory extends PaymentMethod{
         this.name = name;
         this.expirationDate = expirationDate;
         this.cvv = cvv;
+        this.address = address;
         this.cardType = determineCardType(number);
     }
 
